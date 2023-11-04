@@ -1,0 +1,94 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+<!-- Body main wrapper start -->
+<div class="body-wrapper">
+    
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+
+
+    <!-- LOGIN AREA START (Register) -->
+    <div class="ltn__login-area pt-80 pb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title-area mb-10 text-center">
+                        <h1 class="section-title">Register Your Account</h1>
+                        <p>Register now to unlock exclusive offerings and join our community.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <form action="/user_register" class="ltn__form-box contact-form-box" method="post">
+                <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" name="firstname" placeholder="First Name">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" name="lastname" placeholder="Last Name">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" name="email" placeholder="Email*">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <input type="text" name="phone number" placeholder="Mobile Phone Number*">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6">
+                            <input type="password" name="password" placeholder="Password*">
+                        </div>
+                        
+                        <div class="col-sm-12 col-md-6">
+                            <input type="password" name="confirmpassword" placeholder="Confirm Password*">
+                        </div>
+
+                        <div class="col-sm-12 text-center">
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="">
+                                I agree to EcoFurnish using my data for tailored shopping, aligned with our privacy policy and sustainability values.
+                            </label>
+                        
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="">
+                                By clicking "create account", I consent to the <a href="/terms_and_condition">PRIVACY POLICY</a>.
+                            </label>
+                            <div class="btn-wrapper">
+                                <button class="theme-btn-1 btn reverse-color btn-block" type="submit">CREATE ACCOUNT</button>
+                            </div>
+                        </div>
+                    
+                    <div class="by-agree text-center">
+                            <div class="go-to-btn mt-20">
+                                <a href="/login"><b>ALREADY HAVE AN ACCOUNT ?</b></a>
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- LOGIN AREA END -->
+    </div>
+
+    <%- include('../partials/footer'); %>
+ 
+</body>
+</html>
+
